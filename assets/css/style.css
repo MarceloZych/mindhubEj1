@@ -7,20 +7,24 @@
     background: #000;
 }
 
-h1{
-    margin: 2rem;
-}
-
-.banner {
+.banner{
     width: 100%;
-    height: 20rem;
+    height: 500px;    
 }
 
-nav{
-    margin-left: 75%;
-    position: absolute;
-    margin-top: -2rem;    
-    background-color: transparent;
+h1{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+nav{    
+    background-color: transparent;    
+    display: flex;
+    justify-content: flex-end;    
+    gap: 0.5rem;
+    position: relative;
+    top: 2vh;
+    right: 1.5vh;
 }
 
 nav a {
@@ -30,8 +34,7 @@ nav a {
     border-radius: 0.5rem;
     display: inline-block;  
     text-align: center;
-    width: 8rem;
-    height: 3rem;
+    justify-content: center;    
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,33 +45,80 @@ nav a:hover{
     transform: scale(1.1);
 }
 
-section{
-    margin: 5rem;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.titulo{
+    display: flex;
+    justify-content: start;
+}
+
+h2{    
+    background: yellow;
+    margin-top: 1rem;
+    color: #000;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
     width: 100px;
     height: 100px;
-    position: relative;
-    top: 5rem;
-    margin-left: 15rem;
-}
-h2{    
-    background: yellow;
-    color: #000;
-    display: block;
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.articles{
-    position: relative;
-    left: 15rem;    
-    margin-left: 15rem;
-    width: 1000px;
-}
-
-.articles p {
     margin: 1rem;
+    background-color: transparent;
+}
+
+section{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article{
+    margin-left: 2rem;
+    width: 100%;
+}
+
+article p {
+    padding-left: 3vw;
+}
+
+main h3{
+    margin: 1rem;
+}
+
+main dl dd ul {
+    list-style: none;
+}
+
+table{
+    width: 60vw;
+    height: 30vw;
+    padding: 5vw;
+    border-collapse: collapse;
+}
+caption{
+    font-style: italic;
+    text-align: start;
+    margin-left: 20%;
+    margin-top: 1vw;
+}
+
+td{
+    text-align: center;
+    width: 2vh;
+    height: 5vh;
 }
