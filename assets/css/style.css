@@ -122,3 +122,122 @@ td{
     width: 2vh;
     height: 5vh;
 }
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.ubication{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloResgistration{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    padding: 1rem;
+    outline: 1px solid yellow;
+}
+.formContainer{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+form .formContainer label{
+    margin: 1rem;
+}
+
+form .formContainer label input{
+    height: 2rem;
+    font-size: medium;    
+}
+
+form .formContainer label input[type=text]{
+    background: yellow;
+    color: #000;
+    padding: 12px;
+    width: 250px;
+    height: 20px;
+}
+form .formContainer label input[type=date]{
+    background: white;
+    color: black;
+    width: 120px;
+    height: 30px;
+    padding: 2px;
+}
+
+.gender{
+    padding: 15px;
+    width: 50%;
+    height: 30px;
+}
+
+.gender label{
+    width: 70px !important;
+    height: 20px;
+}
+
+fieldset{    
+    border: none;
+    width: 75%;
+    padding: 3vh;
+    display: flex;
+    align-items: center
+}
+
+fieldset label{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+fieldset label input{
+    margin-right: 10px;
+}
+
+.permission fieldset{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.permission fieldset label{
+    width: 80%;
+    display: inline-block;
+}
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit input[type="submit"]{
+    background: yellow;
+    color: black;
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+}
+
+@media (max-width: 426px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: inherit;
+        margin: 1rem;
+    }
+    nav a{
+        padding: 10px;
+        width: 33%;
+    }
+}
